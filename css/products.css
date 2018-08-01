@@ -319,10 +319,10 @@ h3{
 }
 @media(max-width: 600px){
   body{
-    width: 100%;
+    width: 123%;
   }
   .section2{
-    width: 1000%;
+    width: 124%;
   }
   .topnav{
     right: -8rem;
