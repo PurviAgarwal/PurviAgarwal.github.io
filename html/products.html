@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>PRODUCTS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/products.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+.mySlides {display:none}
+</style>
+<body>
+
+<div class="section1">
+  
+  <div class="topnav" id="myTopnav">
+  <img class="img1" src="../images/Logo1.png">
+  <a href="contact.html" class="active">Contact Us</a>  
+  <a href="resources.html">Resources</a>
+  <a href="about.html">About us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products 
+    </button>
+    <div class="dropdown-content">
+      <a href="products.html">Hybrid Electric Vehicle Kit</a>
+      <a href="products.html">Pure Electric Vehicle Kit</a>
+      <a href="products.html">Pure Electric Vehicle Kit</a>
+      <a href="products.html">Pure Electric Vehicle Kit</a>
+    </div>
+  </div> 
+  <a href="../index.html">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="page">
+<div class="slider">
+<div class="text">
+  <h2>Pure Electric Vehicle Kits</h2>
+  <div class="rect0"></div>
+  <p>The pioneering technology of regenerative braking enables the Hybridtronics HEV kit to convert vehicle stopping energy into electric charge. The kit utilizes the energy of the moving vehicle as it is decelerated or brought to stop by the driver, stores it in the smart battery box, and uses this energy to accelerate the vehicle next time. </p>
+  <div class="btn"><a class="spec" href="#">Specifications</a></div>
+</div>
+<div class="slip">
+<div class="images" >
+  <img class="mySlides" src="../images/Model1.png" alt="img1" >
+  <img class="mySlides" src="../images/Model2.png" alt="img2" >
+  <img class="mySlides" src="../images/Model3.png" alt="img3" >
+
+</div>
+
+
+<div class="button">
+  <button class="demo" onclick="currentDiv(1)"><img src="../images/Model1.png" class="clk"></button> 
+  <button class="demo" onclick="currentDiv(2)"><img src="../images/Model2.png" class="clk"></button> 
+  <button class="demo" onclick="currentDiv(3)"><img src="../images/Model3.png" class="clk"></button> 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section2">
+  
+<h1>HYBRID KIT SPECIFICATIONS</h1>
+<div class="kit">
+<div class="white">
+  <h3>Kit Code HyBro 160-LT</h3>
+  <div class="rect"></div>
+  <pre><b>Designed GVW Range</b>      1600 Kgs+/-1000 Kgs</pre>
+  <pre><b>No. of Seats</b>            42</pre>
+  <pre><b>Max Engine Power</b>        135@2500 rpm</pre>
+  <pre><b>Engine CC</b>               998</pre>
+  <pre><b>Kit Components</b>          AC Induction Motor,
+                        Li-ion Battery Pack,
+                        BMS, Gear Box, 
+                        Hybrid Controller</pre>
+</div>
+
+<div class="white">
+  <h3>Kit Code HyBro 160-LT</h3>
+  <div class="rect"></div>
+ <pre><b>Designed GVW Range</b>      1600 Kgs+/-1000 Kgs</pre>
+  <pre><b>No. of Seats</b>            42</pre>
+  <pre><b>Max Engine Power</b>        135@2500 rpm</pre>
+  <pre><b>Engine CC</b>               998</pre>
+  <pre><b>Kit Components</b>          AC Induction Motor,
+                        Li-ion Battery Pack,
+                        BMS, Gear Box, 
+                        Hybrid Controller</pre>
+</div>
+</div>
+</div>
+  
+</div>
+   
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
