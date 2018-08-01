@@ -445,6 +445,7 @@ p.products{
 @media(max-width:800px){
   body{
     background-color: #10141a;
+	  width:100%;
   }
  .dot{
     background-color: #f7f7f7;
