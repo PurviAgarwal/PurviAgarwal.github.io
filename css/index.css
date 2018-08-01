@@ -504,6 +504,7 @@ p.products{
   .footer{
     height: 22rem;
     width: 232%;
+display:flex;
   }
   .building{
     margin-left: 5rem;
