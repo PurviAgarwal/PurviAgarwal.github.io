@@ -319,7 +319,7 @@ h3{
 }
 @media(max-width: 600px){
   body{
-    width: 123%;
+    width: 100%;
   }
   .section2{
     width: 124%;
