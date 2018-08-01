@@ -446,20 +446,20 @@ p.products{
   body{
     background-color: #10141a;
   }
-  .dot{
+ .dot{
     background-color: #f7f7f7;
     z-index: -1;
     top: -25.5rem;
-    left: -22.5rem;
+    left: -19.5rem;
     height: 78rem;
     width: 97rem;
   }
   .topnav{
     background-color: #10141a;
     top: 0rem;
-    width: 206%;
+    width: 232%;
     position: absolute;
-    right: -28rem;
+    right: -35rem;
   }
   .img0{
         margin-top: -11.4rem;
@@ -468,40 +468,46 @@ p.products{
     margin-top: 12rem;
   }
   b{
-        left: 18rem;
+        left: 22rem;
         top: 58.5rem;
   }
   h1{
-        left: 19rem;
+        left: 22rem;
         top: 64rem;
   }
   .btn1{
-        left: 22rem;
+        left: 26rem;
         top: 75rem;
         width: 26%;
   }
   .prod{
     margin-top: 40rem;
-    margin-left: 14rem;
+    margin-left: 18rem;
     width: 100%;
   }
   .section2{
     height: 71rem;
   }
   .mySlides2{
-    margin-left: 25rem;
+    margin-left: 31rem;
   }
   .txt{
-    margin-left: 25rem;
+    margin-left: 31rem;
   }
   .mySlides{
-    margin-left: 25rem;
+    margin-left: 31rem;
   }
   .txt2{
-    margin-left: 25rem;
+    margin-left: 31rem;
   }
   .footer{
     height: 22rem;
-    width: 203%;
+    width: 232%;
+  }
+  .building{
+    margin-left: 5rem;
+  }
+  .foots{
+    margin-left: 0;
   }
 }
