@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>IXenergy</title>
+<link rel="shortcut icon" href="../images/favicon1.png" type="image/png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/products2.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+.mySlides {display:none}
+</style>
+<body>
+
+<div class="section1">
+  <img class="img1" src="../images/Logo1.png">
+  <div class="topnav" id="myTopnav">
+  <img src="">
+  <a href="contact.html">Contact Us</a>  
+  <a href="resources.html">Resources</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn drop" id="active">Products 
+    </button>
+    <div class="dropdown-content">
+      <a href="products.html">Hybrid Electric Vehicle Kits</a>
+      <a href="products2.html">Full Electric Vehicle Kits</a>
+    
+    </div>
+  </div> 
+  <a href="../index.html">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="page">
+<div class="slider">
+<div class="text">
+  <h2>Full Electric Vehicle Kits</h2>
+  <div class="rect0"></div>
+  <p class="topp">Pocket-friendly fleet solutions, designed for your fleet of inter-city buses and trucks. The full electric kit is the pioneer of sustainability to take your fleet completely off fuel dependency. Full electrification of trucks and buses is possible in half the cost of the new ones. With innovative technology solutions fully developed indigenously, the FEV kit offers powerful cost-saving capabilities. </p>
+  <div class="btn"><a class="spec" href="#sect2">Features</a></div>
+</div>
+<div class="slip">
+<div class="images" >
+  <img class="mySlides" src="../images/Model1.png" alt="img1" >
+  <img class="mySlides" src="../images/Model2.png" alt="img2" >
+  <img class="mySlides" src="../images/Model3.png" alt="img3" >
+
+</div>
+
+
+<div class="button">
+  <button class="demo" onclick="currentDiv(1)"><img src="../images/Model1.png" class="clk"></button> 
+  <button class="demo" onclick="currentDiv(2)"><img src="../images/Model2.png" class="clk"></button> 
+  <button class="demo" onclick="currentDiv(3)"><img src="../images/Model3.png" class="clk"></button> 
+</div>
+</div>
+</div>
+</div>
+</div>
+   <div class="section2" id="sect2">
+    <div class="sect2-1">
+     <div class="block1">
+      <h4>Zero Tailpipe Emissions</h4><p>
+        Full electrification leads to zero tailpipe emissions. This can go a long way in fulfilling your commitment towards reducing local pollution. What’s more, it puts you on the path to global pollution reduction.</p>
+        <!--<div class="learn-more"><a href="#" class="link1">LEARN MORE</a></div>-->
+     </div>
+     <div class="block2">
+      <h4>75% Fuel Cost Reductions</h4><p>
+        Our technology allows for up to 75% reduction in fuel costs as compared to diesel.The savings pay back your investment in a mere 3-4 years.</p>
+         <div class="learn-more"><a href="file:///C:/Users/user/Google%20Drive/Lap%20Back/ixenergy/images/Full%20Electric%20RoI.pdf" class="link2">LEARN MORE</a></div>
+     </div>
+   </div>
+   <div class="sect2-2">
+     <div class="block3">
+      <h4>Sustainable, yet viable</h4><p>
+        Our innovative technology solutions mean that retrofitting and reusing an old vehicle is not just less carbon intensive, but half the cost of buying a new vehicle.</p>
+         <!--<div class="learn-more"><a href="#" class="link3">LEARN MORE</a></div>-->
+     </div>
+     <div class="block4">
+      <h4>Ideal for long ranges</h4><p>
+        Full electric vehicles give better performance on routes with a daily range of more than 120 km, such as inter-city bus or cargo routes. We offer you a highly attractive return on your investment.</p>
+         <!--<div class="learn-more"><a href="#" class="link4">LEARN MORE</a></div>-->
+     </div>
+   </div>
+   </div>
+   <div class="section3">
+     <p class="banner">Interested? Get in touch with <a href="../html/contact.html" class="sales"><span>sales</a></span>.</p>
+   </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
